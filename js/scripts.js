@@ -7,6 +7,8 @@
 // Scripts
 // 
 
+let numPhoto = 1;
+
 window.addEventListener('DOMContentLoaded', event => {
 
     // Navbar shrink function
@@ -52,3 +54,20 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
 });
+
+
+// Code by Alex Torres
+
+setInterval(changePhotoBackground, 3500);
+
+function changePhotoBackground() {
+    console.log(document.getElementById("firstSection").style.background);
+    document.getElementById("firstSection").setAttribute('style', `background-image:url('./assets/img/background${numPhoto}.jpg'); background-size:cover`);
+    //document.getElementById("firstSection").setAttribute('style', `background-size:cover `);
+    if(numPhoto>=14) {
+    numPhoto=0;
+    }
+    numPhoto++;
+    console.log(numPhoto);
+}
+
