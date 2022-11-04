@@ -58,7 +58,7 @@ window.addEventListener('DOMContentLoaded', event => {
 
 // Code by Alex Torres
 
-setInterval(changePhotoBackground, 3500);
+// setInterval(changePhotoBackground, 3500);
 
 function changePhotoBackground() {
     console.log(document.getElementById("firstSection").style.background);
